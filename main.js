@@ -1,0 +1,1 @@
+// Recolhendo todos os botões
