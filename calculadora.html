@@ -8,44 +8,38 @@
 </head>
 <body>
     <div class="container">
-        <div class="fundo">
-
-            <div class="barra">0</div>
-
-           <div class="row">
-            <input type="button" value="C" class="botao-especial" id="limpar"> 
-            <input type="button" value="%" class="botao-especial">
-            <input type="button" value="()"class="botao-especial">
-            <input type="button" value="÷" class="botao">
-           </div>
-
-           <div class="row">
-            <input type="button" value="7" class="botao">
-            <input type="button" value="8" class="botao">
-            <input type="button" value="9" class="botao">
-            <input type="button" value="x" class="botao">
-           </div>
-
-           <div class="row">
-            <input type="button" value="4" class="botao">
-            <input type="button" value="5" class="botao">
-            <input type="button" value="6" class="botao">
-            <input type="button" value="-" class="botao">
-           </div>
-
-           <div class="row">
-            <input type="button" value="1" class="botao">
-            <input type="button" value="2" class="botao">
-            <input type="button" value="3" class="botao">
-            <input type="button" value="+" class="botao">
-           </div>
-           
-           <div class="row">
-            <input type="button" value="0" class="botao">
-            <input type="button" value="," class="botao-especial">
-            <input type="button" value="=" class="botao-especial">
-            <input type="button" value="s/v" class="botao-especial">
-           </div>
+        <div class="visor">
+            <input type="text" id="inputBox" value="0" placeholder="0" disabled>
+        </div>
+        <div class="linha">
+            <button type="button" class="operacao">AC</button>
+            <button type="button" class="operacao">DEL</button>
+            <button type="button" class="operacao">%</button>
+            <button type="button" class="operacao">/</button>
+        </div>
+        <div class="linha">
+            <button type="button">7</button>
+            <button type="button">8</button>
+            <button type="button">9</button>
+            <button type="button" class="operacao">X</button>
+        </div>
+        <div class="linha">
+            <button type="button">4</button>
+            <button type="button">5</button>
+            <button type="button">6</button>
+            <button type="button" class="operacao">-</button>
+        </div>
+        <div class="linha">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button" class="operacao">+</button>
+        </div>
+        <div class="linha">
+            <button type="button" id="plusMinus">&#xB1;</button>
+            <button type="button">0</button>
+            <button type="button">,</button>
+            <button type="button" id="resultado">=</button>
         </div>
     </div>
 

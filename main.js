@@ -1,22 +1,29 @@
-// Recolhendo todos os botões e a barra
-var botoes = document.querySelectorAll('.botao');
-var limpar = document.querySelector('#limpar');
-var barra = document.querySelector('.barra');
+let inputBox = document.getElementById('inputBox')
+let buttons = document.querySelectorAll('button')
 
-// Adicionando um evento de clique a cada botão
-botoes.forEach(function(botao) {
-  botao.addEventListener('click', function() {
-    // Obtendo o valor do botão clicado
-    var valorBotao = this.value;
-    barra.innerText += valorBotao;
-  });
-});
+let string = ''
 
-// Função de limpar
-/*
-limpar.forEach(function(limparTudo) {
-    limparTudo.addEventListener('click', function() {
-        barra.innerHTML = "0";
-    });
-});
-*/
+buttons.forEach(element =>{
+    element.addEventListener('click', (b)=>{
+        if(b.target.innerText == '='){
+            string = String(eval(string))
+            inputBox.value = string;
+        }
+        else if (b.target.innerText == 'AC'){
+            string = ''
+            inputBox.value = string;
+        }
+        else if (b.target.innerText == 'DEL'){
+            string = string.substring(0,string.length-1)
+            inputBox.value = string;
+        }
+        else if (b.target.innerText == 'plusMinus'){
+            string = String(-eval(string))
+            inputBox.value = string;
+        }
+        else {
+            string += b.target.innerText
+            inputBox.value = string;
+        }
+    })
+})

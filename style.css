@@ -8,53 +8,62 @@
 }
 
 body {
-    background-color: rgb(17, 17, 17);
+    background-image: linear-gradient(45deg, rgb(12, 12, 12), rgb(65, 65, 65));
+    min-height: 100vh;
+    max-width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
     font: 16px 'Poppins' bolder;
 }
 
 .container {
-    background-image: linear-gradient(45deg, rgb(14, 13, 13), rgb(23,23,23) );
-    width: 300px;
-    height: 420px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 2px solid #ffffff3b;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px;
+    box-shadow: 2px 2px 15px #000;
 }
 
-.barra {
-    width: 250px;
-    margin: 20px 0px;
-    background-color: white;
-    text-align: right;
-    padding: 5px;
-    font-size: 24px;
+.visor input {
+    width: 360px;
+    border: 1px solid #ffffff3b;
     border-radius: 10px;
-    font-family: "Poppins", sans-serif;
-}
-
-.botao {
-    background-color: rgb(15, 14, 14);
-    border: 0.5px solid rgba(255, 255, 255, 0.26);
-    width: 55px;
-    color: white;
+    outline: none;
     padding: 20px;
-    margin: 2px;
-    border-radius: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.36);
+    font-size: 48px;
+    color: #fff;
+    text-align: end;
+    cursor: pointer;
 }
 
-.botao-especial {
-    background-color: rgb(15, 14, 14);
-    border: 0.5px solid rgba(255, 255, 255, 0.26);
-    width: 55px;
+button {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-color: transparent;
     color: white;
-    padding: 20px;
-    margin: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: -5px -6px 10px rgba(0, 0, 0, 0.789);
+    border: 0.5px solid rgba(255, 255, 255, 0.163);
     border-radius: 10px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #000;
+    transform: translate(2px, 2px);
+}
+
+.operacao {
+    background-color: #050505a2;
+    color: yellow;
+}
+
+#resultado {
+    background-color: orange;
+    color: white;
 }
