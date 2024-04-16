@@ -61,9 +61,11 @@ button:active {
 .operacao {
     background-color: #050505a2;
     color: yellow;
+    font-weight: 700;
 }
 
 #resultado {
     background-color: orange;
     color: white;
+    font-weight: 900;
 }
